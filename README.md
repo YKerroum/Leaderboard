@@ -26,7 +26,7 @@ This website requires Javascript to be enabled in your browser.
 
 👤 **Author**
 
-<div id="badges" align="center">
+<div id="badges">
   <a href="https://www.linkedin.com/in/ykerroum/">
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=plastic&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
   </a>
