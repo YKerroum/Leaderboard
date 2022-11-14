@@ -26,9 +26,17 @@ This website requires Javascript to be enabled in your browser.
 
 👤 **Author**
 
-- GitHub: [@githubhandle](https://github.com/YKerroum)
-- Twitter: [@twitterhandle](https://twitter.com/kerroum_youssef)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ykerroum/)
+<div id="badges" align="center">
+  <a href="https://www.linkedin.com/in/ykerroum/">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=plastic&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+  </a>
+  <a href="https://github.com/YKerroum">
+    <img src="https://img.shields.io/badge/GitHub-grey?style=plastic&logo=github&logoColor=white" alt="GitHub Badge"/>
+  </a>
+  <a href="https://twitter.com/kerroum_youssef">
+    <img src="https://img.shields.io/badge/Twitter-blue?style=plastic&logo=twitter&logoColor=white" alt="Twitter Badge"/>
+  </a>
+</div>
 
 
 ## 🤝 Contributing
