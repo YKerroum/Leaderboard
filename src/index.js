@@ -1,33 +1,31 @@
 import './index.css';
-import Scores from './scores'
 import Data from './data';
 
 const formElement=document.querySelector('#add-form');
 const recentElement=document.querySelector('#recent-content');
 
-
-const fillList= (datas) => {
+const data=  new Data();
+const fillList= () => {
+data.getData();
 recentElement.innerHTML='';
-datas.forEach((data,index) => {
+data.scores.forEach((element,index) => {
 recentElement.innerHTML += `
-<li id="${index}li" class="${index%2? 'greyList' : ''}">${data.name} : ${data.score}</li>
+<li id="${index}li" class="${index%2? 'greyList' : ''}">${element.name} : ${element.score}</li>
 `
 })
 
 }
 
 window.onload = () => {
-const data= Data.getData;
-const scores=new Scores(data);
 
-formElement.addEventListener('submit', (e) => {
-Data.setData(scores.addScore({name:e.target.querySelector('#name').value ,score:e.target.querySelector('#score').value}));
-fillList(scores);
-})
+formElement.addEventListener("submit", (e) => {
+data.setData({name:e.target.querySelector('#name').value ,score:e.target.querySelector('#score').value});
+console.log(data);
+fillList();
+});
 
 document.querySelector("#refresh").addEventListener("click",()=>{
-  const data= Data.getData;
-  fillList(data);
-})
+  fillList();
+});
 
 }
