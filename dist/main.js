@@ -15,7 +15,7 @@
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n___CSS_LOADER_EXPORT___.push([module.id, \"@import url(https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap);\"]);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"* {\\r\\nmargin: 0;\\r\\npadding: 0;\\r\\nfont-family: 'Mulish', sans-serif;\\r\\n}\\r\\n\\r\\nbody {\\r\\nwidth: 100%;\\r\\nheight: 100vh;\\r\\n}\\r\\n\\r\\nh1 {\\r\\nmargin: 2% 0 5% 1%;\\r\\n}\\r\\n\\r\\nmain {\\r\\nwidth: 90%;\\r\\nmargin: 0 auto;\\r\\ndisplay: flex;\\r\\njustify-content: space-around;\\r\\n}\\r\\n#recent-container {\\r\\nwidth: 40%;\\r\\n}\\r\\n\\r\\n#recent-content {\\r\\nborder: 2px solid #000;\\r\\n}\\r\\n\\r\\n#add-container form {\\r\\ndisplay: flex;\\r\\nflex-direction: column;\\r\\ngap: 15px;\\r\\n}\\r\\n\\r\\n.forms{\\r\\nheight: 30px;\\r\\n}\\r\\n\\r\\n#recent-header {\\r\\ndisplay: flex;\\r\\njustify-content: space-between;\\r\\n}\\r\\n\\r\\n#add-container {\\r\\nwidth: 30%;\\r\\n}\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack:///./src/index.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n___CSS_LOADER_EXPORT___.push([module.id, \"@import url(https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap);\"]);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"* {\\r\\nmargin: 0;\\r\\npadding: 0;\\r\\nfont-family: 'Mulish', sans-serif;\\r\\n}\\r\\n\\r\\nbody {\\r\\nwidth: 100%;\\r\\nheight: 100vh;\\r\\n}\\r\\n\\r\\nh1 {\\r\\nmargin: 2% 0 5% 1%;\\r\\n}\\r\\n\\r\\nmain {\\r\\nwidth: 90%;\\r\\nmargin: 0 auto;\\r\\ndisplay: flex;\\r\\njustify-content: space-around;\\r\\n}\\r\\n#recent-container {\\r\\nwidth: 40%;\\r\\n}\\r\\n\\r\\n#recent-content {\\r\\nborder: 2px solid #000;\\r\\nlist-style-type: none;\\r\\n}\\r\\n\\r\\n#add-container form {\\r\\ndisplay: flex;\\r\\nflex-direction: column;\\r\\ngap: 15px;\\r\\n}\\r\\n\\r\\n.forms{\\r\\nheight: 30px;\\r\\n}\\r\\n\\r\\n#recent-header {\\r\\ndisplay: flex;\\r\\njustify-content: space-between;\\r\\n}\\r\\n\\r\\n#add-container {\\r\\nwidth: 30%;\\r\\n}\\r\\n\\r\\n.greyList {\\r\\nbackground-color:gainsboro;\\r\\n}\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack:///./src/index.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -109,13 +109,33 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/data.js":
+/*!*********************!*\
+  !*** ./src/data.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Data)\n/* harmony export */ });\nclass Data {\r\n  static getData=() =>localStorage.getItem('scores') ? JSON.parse(localStorage.getItem('scores')) : [];\r\n  static setData=(scores) =>localStorage.setItem('scores', JSON.stringify(scores));\r\n}\r\n\n\n//# sourceURL=webpack:///./src/data.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.css */ \"./src/index.css\");\n\r\n\r\nwindow.onload = () => {\r\n\r\n\r\n\r\n}\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.css */ \"./src/index.css\");\n/* harmony import */ var _scores__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scores */ \"./src/scores.js\");\n/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./data */ \"./src/data.js\");\n\r\n\r\n\r\n\r\nconst formElement=document.querySelector('#add-form');\r\nconst recentElement=document.querySelector('#recent-content');\r\n\r\n\r\nconst fillList= (datas) => {\r\nrecentElement.innerHTML='';\r\ndatas.forEach((data,index) => {\r\nrecentElement.innerHTML += `\r\n<li id=\"${index}li\" class=\"${index%2? 'greyList' : ''}\">${data.name} : ${data.score}</li>\r\n`\r\n})\r\n\r\n}\r\n\r\nwindow.onload = () => {\r\nconst data= _data__WEBPACK_IMPORTED_MODULE_2__[\"default\"].getData;\r\nconst scores=new _scores__WEBPACK_IMPORTED_MODULE_1__[\"default\"](data);\r\n\r\nformElement.addEventListener('submit', (e) => {\r\n_data__WEBPACK_IMPORTED_MODULE_2__[\"default\"].setData(scores.addScore({name:e.target.querySelector('#name').value ,score:e.target.querySelector('#score').value}));\r\nfillList(scores);\r\n})\r\n\r\ndocument.querySelector(\"#refresh\").addEventListener(\"click\",()=>{\r\n  const data= _data__WEBPACK_IMPORTED_MODULE_2__[\"default\"].getData;\r\n  fillList(data);\r\n})\r\n\r\n}\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/scores.js":
+/*!***********************!*\
+  !*** ./src/scores.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Scores)\n/* harmony export */ });\nclass Scores {\r\n  constructor(data) {\r\n  this.scores=data;\r\n  }\r\n  \r\n  addScore=(score)=> {\r\n  this.scores.push(score);\r\n  return this.scores;\r\n  }\r\n\r\n}\n\n//# sourceURL=webpack:///./src/scores.js?");
 
 /***/ })
 
