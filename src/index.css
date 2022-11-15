@@ -1,63 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
 
-
 * {
-margin: 0;
-padding: 0;
-font-family: 'Mulish', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Mulish', sans-serif;
 }
 
 body {
-width: 100%;
-height: 100vh;
+  width: 100%;
+  height: 100vh;
 }
 
 h1 {
-margin: 2% 0 5% 1%;
+  margin: 2% 0 5% 1%;
 }
 
 main {
-width: 90%;
-margin: 0 auto;
-display: flex;
-justify-content: space-around;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
 }
+
 #recent-container {
-width: 30%;
+  width: 30%;
 }
 
 #recent-content {
-margin-top: 5%;
-border: 2px solid #000;
-list-style-type: none;
+  margin-top: 5%;
+  border: 2px solid #000;
+  list-style-type: none;
 }
 
 #add-container form {
-margin-top: 5%;
-display: flex;
-flex-direction: column;
-gap: 15px;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.forms{
-height: 30px;
+.forms {
+  height: 30px;
 }
 
 #recent-header {
-display: flex;
-justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 #add-container {
-width: 30%;
+  width: 30%;
 }
 
 .greyList {
-background-color:gainsboro;
+  background-color: gainsboro;
 }
 
 #submit {
-align-self: flex-end;
+  align-self: flex-end;
 }
 
 .btn {
@@ -79,6 +79,3 @@ align-self: flex-end;
   box-shadow: 1px 1px black;
   transform: translateY(2px);
 }
-
-
-
