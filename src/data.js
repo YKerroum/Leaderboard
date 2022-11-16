@@ -1,10 +1,31 @@
 export default class Data {
-  constructor() {
+  constructor () {
     this.scores = [];
+    this.ID = null;
   }
 
-  getData=() => {
-    this.scores = localStorage.getItem('scores') ? JSON.parse(localStorage.getItem('scores')) : [];
+  createGame= async () =>{
+        await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/', {
+        method: 'POST',
+        headers: {
+      'Content-Type': 'application/json'
+       },
+        body: JSON.stringify({
+        name: "My cool new game",
+        })
+    })
+  .then((response) => response.json())
+  .then((json) => {
+    this.ID=json.result.slice(13, -6).trim();
+  });
+  
+  }
+
+  getData= async () => {
+    
+
+
+    
   }
 
   setData=(score) => {
