@@ -17,12 +17,15 @@ export default class Data {
   .then((response) => response.json())
   .then((json) => {
     this.ID=json.result.slice(13, -6).trim();
+    console.log(this.ID);
   });
   
   }
 
   getData= async () => {
-    await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api//games/${this.ID}/scores/`)
+    await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${this.ID}/scores/`,{
+    headers: {'Content-Type': 'application/json'}
+    })
     .then(response => response.json())
   .then(json => {this.scores=[...json.result]});
   }
