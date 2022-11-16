@@ -9,6 +9,7 @@ const data = new Data();
 const fillList = () => {
 console.log(data.ID);
   data.getData().then((value) => {
+  console.log(value);
     console.log(data.scores);
     recentElement.innerHTML = '';
     data.scores.forEach((element, index) => {
@@ -24,10 +25,10 @@ window.onload = () => {
   
   data.createGame().then((value) => {fillList()});
   formElement.addEventListener('submit', (e) => {
-    data.setData({ name: e.target.querySelector('#name').value, score: e.target.querySelector('#score').value });
-    fillList();
+    data.setData({ name: e.target.querySelector('#name').value, score: e.target.querySelector('#score').value }).then(() => {
+    fillList()}
+    )
   });
-
   document.querySelector('#refresh').addEventListener('click', () => {
     fillList();
   });

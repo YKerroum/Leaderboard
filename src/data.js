@@ -17,21 +17,29 @@ export default class Data {
   .then((response) => response.json())
   .then((json) => {
     this.ID=json.result.slice(13, -6).trim();
-    console.log(this.ID);
+    localStorage.setItem('id', this.ID);
   });
   
   }
 
   getData= async () => {
-    await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${this.ID}/scores/`,{
-    headers: {'Content-Type': 'application/json'}
-    })
+    await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${this.ID}/scores/`)
     .then(response => response.json())
   .then(json => {this.scores=[...json.result]});
   }
 
-  setData=(score) => {
-    this.scores.push(score);
-    localStorage.setItem('scores', JSON.stringify(this.scores));
+  setData=async (newScore) => {
+
+    await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${this.ID}/scores/`,{
+      method: 'POST',
+      body: JSON.stringify({
+      user: newScore.name,
+      score: newScore.score,
+      }),
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      },
+    })
+    .then(response => response.json());
   }
 }
