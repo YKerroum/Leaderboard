@@ -22,10 +22,9 @@ export default class Data {
   }
 
   getData= async () => {
-    
-
-
-    
+    await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api//games/${this.ID}/scores/`)
+    .then(response => response.json())
+  .then(json => {this.scores=[...json.result]});
   }
 
   setData=(score) => {
