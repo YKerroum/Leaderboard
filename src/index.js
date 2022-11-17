@@ -1,7 +1,7 @@
 import './index.css';
 import Data from './data.js';
 
-const submitElement = document.querySelector('#submit');
+const formElement = document.querySelector('#add-form');
 const recentElement = document.querySelector('#recent-content');
 
 const data = new Data();
@@ -19,8 +19,10 @@ const fillList = () => {
 
 window.onload = () => {
   data.createGame().then(() => { fillList(); });
-  submitElement.addEventListener('click', () => {
-    data.setData(document.querySelector('#name').value, document.querySelector('#score').value).then(() => {
+  formElement.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const formdata= new FormData(formElement);
+    data.setData(formdata.get('name'),formdata.get('score')).then(() => {
       document.querySelector('#name').value = '';
       document.querySelector('#score').value = '';
       fillList();
