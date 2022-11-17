@@ -1,14 +1,44 @@
 export default class Data {
   constructor() {
     this.scores = [];
+    this.id = localStorage.getItem('id');
   }
 
-  getData=() => {
-    this.scores = localStorage.getItem('scores') ? JSON.parse(localStorage.getItem('scores')) : [];
+  createGame= async () => {
+    await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        name: 'My cool new game',
+      }),
+    })
+      .then((response) => response.json())
+      .then((json) => {
+        if (localStorage.getItem('id') === null) {
+          this.id = json.result.slice(13, -6).trim();
+          localStorage.setItem('id', this.id);
+        }
+      });
   }
 
-  setData=(score) => {
-    this.scores.push(score);
-    localStorage.setItem('scores', JSON.stringify(this.scores));
+  getData= async () => {
+    this.scores = await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${this.id}/scores/`)
+      .then((response) => response.json())
+      .then((json) => json.result);
+  }
+
+  setData= async (user, score) => {
+    await fetch(`http://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${this.id}/scores/`, {
+      method: 'POST',
+      headers: { 'Content-type': 'application/json' },
+      body: JSON.stringify({
+        user,
+        score,
+      }),
+    })
+      .then((response) => response.json())
+      .then((json) => json.result);
   }
 }
