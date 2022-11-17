@@ -8,13 +8,18 @@
     <script src="main.js"></script>
 <script defer src="runtime.js"></script><script defer src="main.js"></script></head>
 <body>
+    <header id="header">
     <h1>Leaderboard</h1>
+    </header>
+    
     <main>
+        <div id="content">
         <section id="recent-container">
             <header id="recent-header">
             <h2>Recent scores</h2>
             <button type="button" class="forms btn" id="refresh">Refresh</button>
             </header>
+            <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
             <ul id="recent-content">
             
             </ul>
@@ -28,6 +33,7 @@
             <input type="submit" value="Submit" id="submit" class="forms btn">
             </form>
         </section>
+        </div>
     </main>
     
 </body>

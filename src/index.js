@@ -3,10 +3,12 @@ import Data from './data.js';
 
 const formElement = document.querySelector('#add-form');
 const recentElement = document.querySelector('#recent-content');
+const loadElement = document.querySelector('.lds-default');
 
 const data = new Data();
 
 const fillList = () => {
+  loadElement.style.display = 'inline-block';
   data.getData().then(() => {
     recentElement.innerHTML = '';
     data.scores.forEach((element, index) => {
@@ -14,6 +16,7 @@ const fillList = () => {
 <li id="${index}li" class="forms ${index % 2 ? 'greyList' : ''}">${element.user} : ${element.score}</li>
 `;
     });
+    loadElement.style.display = 'none';
   });
 };
 
