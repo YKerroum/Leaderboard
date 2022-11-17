@@ -21,8 +21,8 @@ window.onload = () => {
   data.createGame().then(() => { fillList(); });
   formElement.addEventListener('submit', (event) => {
     event.preventDefault();
-    const formdata= new FormData(formElement);
-    data.setData(formdata.get('name'),formdata.get('score')).then(() => {
+    const formdata = new FormData(formElement);
+    data.setData(formdata.get('name'), formdata.get('score')).then(() => {
       document.querySelector('#name').value = '';
       document.querySelector('#score').value = '';
       fillList();
